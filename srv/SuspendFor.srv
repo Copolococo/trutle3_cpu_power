@@ -1,0 +1,8 @@
+uint8 SUSPEND2RAM=0 #default behaviour
+uint8 SHUTDOWN=9
+
+#Request
+uint8 suspend_state
+RTCTime duration
+---
+#Response
