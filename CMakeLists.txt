@@ -114,4 +114,4 @@ add_dependencies(power_manager_node
 )
 
 install(TARGETS power_manager_node
-    RUNTIME DESTINATIO ${CATKIN_PACKAGE_BIN_DESTINATION})
+    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
