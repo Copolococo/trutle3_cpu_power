@@ -5,9 +5,10 @@
 #include <stdexcept> /* cpp error handling */
 #include <exception> /* cpp error handling */
 
-#include <fcntl.h>  /* used for open(path) */
-#include <unistd.h> /* used for close(fd) */
-#include <sys/ioctl.h>
+#include <linux/fcntl.h>  /* used for open(path) */
+#include <linux/unistd.h> /* used for close(fd) */
+//#include <sys/ioctl.h>
+#include <linux/ioctl.h>
 
 #include <linux/rtc.h> /* ioctl structs and macros for rtc */
 
