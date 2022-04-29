@@ -112,3 +112,6 @@ add_dependencies(power_manager_node
   ${${PROJECT_NAME}_EXPORTED_TARGETS} 
   ${catkin_EXPORTED_TARGETS}
 )
+
+install(TARGETS power_manager_node
+    RUNTIME DESTINATIO ${CATKIN_PACKAGE_BIN_DESTINATION})
