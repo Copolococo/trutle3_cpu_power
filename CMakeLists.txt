@@ -41,9 +41,6 @@ find_package(catkin REQUIRED COMPONENTS
 ##     find_package(catkin REQUIRED COMPONENTS ...)
 ##   * add "message_runtime" and every package in MSG_DEP_SET to
 ##     catkin_package(CATKIN_DEPENDS ...)
-##   * uncomment the add_*_files sections below as needed
-##     and list every .msg/.srv/.action file to be processed
-##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
@@ -81,7 +78,8 @@ catkin_package(
   LIBRARIES power_manager
   CATKIN_DEPENDS roscpp
                  message_runtime
-#  DEPENDS system_lib
+  DEPENDS roscpp
+          message_runtime
 )
 
 ###########
@@ -115,3 +113,4 @@ add_dependencies(power_manager_node
 
 install(TARGETS power_manager_node
     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
